@@ -1,7 +1,11 @@
+# This file wont do us much good in this location, make sure you change the path as directed to continue!
+
 name: Node CI
 
-on: [push]
-
+on:
+  push:
+    paths:
+      - "**Dockerfile**"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -40,3 +44,15 @@ jobs:
           npm test
         env:
           CI: true
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
